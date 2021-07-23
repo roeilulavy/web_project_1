@@ -85,10 +85,58 @@
 
 /* ===== Header End ===== */
 
+/* ========== Start of Content ========== */
+
+/* ===== description start ===== */
+
+.description {
+  margin-top: 100px;
+  height: 500px;
+}
+
+
+/* ===== description End ===== */
+
+/* ===== Digits start ===== */
+
+.digits {
+  margin-top: 100px;
+  height: 500px;
+}
+
+/* ===== Digits End ===== */
+
+/* ===== Feyman start ===== */
+
+.feynman {
+  margin-top: 100px;
+  height: 500px;
+}
+
+/* ===== Feyman End ===== */
+
+/* ===== Kaufman start ===== */
+
+.kaufman {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  height: 500px;
+}
+
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+/* ===== Kaufman End ===== */
+
+/* ===== footer start ===== */
+
+.footer {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  height: 300px;
 }
