@@ -91,7 +91,48 @@
 
 .description {
   margin-top: 100px;
-  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-columns {
+  border: solid 1px cyan;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__main-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__paragraph {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph_paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__paragraph_span-access {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 
