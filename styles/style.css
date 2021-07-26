@@ -64,7 +64,7 @@
 }
 
 .header__main-illustration {
-  width: 756px; 
+  width: 756px;
   height: 608px;
   position: absolute;
   bottom: 0;
@@ -190,6 +190,7 @@
   font-weight: bold;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .table_text {
@@ -227,7 +228,6 @@
   z-index: 1;
   margin: 100px auto 0;
   padding: 0;
-  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -237,7 +237,6 @@
   z-index: 1;
   margin: 70px auto 0;
   padding: 0;
-  z-index: 1;
 }
 
 .feynman__link {
