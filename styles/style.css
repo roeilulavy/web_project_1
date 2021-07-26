@@ -10,10 +10,6 @@
   padding: 0;
 }
 
-* {
-  border: solid 1px red;
-}
-
 /* ===== Header Start ===== */
 
 .header {
@@ -26,15 +22,18 @@
 }
 
 .logo {
-  width: 154px;
-  height: 31px;
-}
-
-.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
   z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo_place_header {
+  background-image: url('../images/logo_place_header.png');
+  width: 154px;
+  height: 31px;
 }
 
 .header__title {
@@ -216,6 +215,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background: #F2F2F2;
 }
 
 .feynman__title {
@@ -315,29 +315,41 @@
   min-height: 350px;
   background:  #1F1F1F;
   display: flex;
-  justify-content: center;
   color: #F2F2F2;
 }
 
-.footer__column {
+.footer__columns {
   width: 90%;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin: 60px auto 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.footer__column__content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.footer__column_content_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .logo_place_footer {
+  background-image: url('../images/logo_place_footer.png');
   width: 183px;
   height: 35px;
+  position: unset;
 }
 
 .footer__aouthor {
@@ -347,12 +359,6 @@
   margin: 18px 0;
 }
 
-.footer__column__content_about {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
@@ -360,13 +366,13 @@
   margin: 0;
 }
 
-.footer__column__list {
+.footer__list {
   list-style: none;
   padding: 0;
   margin: 20px 0 0;
 }
 
-.footer__column__column-link {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -374,9 +380,10 @@
   text-decoration: none;
 }
 
-.footer__column__list__social-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin: 0 10px 0 0;
   padding: 0;
+  align-self: center;
 }
