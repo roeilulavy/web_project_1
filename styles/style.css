@@ -97,7 +97,7 @@
 .two-columns {
   width: 80%;
   min-width: 784px;
-  margin: 100px auto 100px;
+  margin: 100px auto 0;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -155,6 +155,7 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -165,51 +166,51 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
+  z-index: 1;
 }
 
 .table {
   width: 1100px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .table_cell {
   width: 250px;
-  margin-right: 0;
-  margin-top: 60px;
   display: flex;
+  margin-top: 60px;
+  padding: 0;
 }
 
 .table_heading {
-  line-height: 1.5;
+  line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
 
-.digits__table_cell-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .table_text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.table_text li {
+  margin-top: 20px;
+}
 
 /* ===== Digits End ===== */
 
 /* ===== Feyman start ===== */
 
 .feynman {
-  margin-top: 100px;
   height: 790px;
   min-height: 790px;
   display: flex;
@@ -219,12 +220,12 @@
 
 .feynman__title {
   width: 775px;
-  line-height: 1.5;
+  line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   text-align: center;
   z-index: 1;
-  margin: 0 auto;
+  margin: 100px auto 0;
   padding: 0;
   z-index: 1;
 }
@@ -262,95 +263,48 @@
 /* ===== Kaufman start ===== */
 
 .kaufman {
-  height: 800px;
-  width: 100%;
   display: flex;
   position: relative;
   overflow: hidden;
   flex-direction: column;
   background:  #1F1F1F;
-}
-
-.kaufman__title {
-  width: 60%;
-  margin: 90px auto 0;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  justify-self: center;
-  z-index: 1;
-}
-
-.kaufman__subtitle {
-  width: 60%;
-  margin: 20px auto 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  z-index: 1;
-}
-
-.kaufman__table {
-  width: 1100px;
-  margin: 0 auto 90px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.kaufman__table_cell {
-  width: 200px;
-  margin-right: 0;
-  margin-top: 80px;
-  display: flex;
-}
-
-.kaufman__table_cell-heading {
-  line-height: 1.5;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.kaufman__table_cell-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.kaufman__table_cell-text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px 0 0;
-}
-
-.kaufman__image {
-  width: 660px;
-  height: 636px;
-  position: absolute;
-  right: -124px;
+  align-items: center;
 }
 
 /* including elements with key-value modifiers */
 
-.kaufman__title_theme_dark{
+.section-title_theme_dark{
+  color: white;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+.section-subtitle_theme_dark{
   color: white;
 }
 
-.kaufman__subtitle_theme_dark{
-  color: white;
+.table_theme_dark {
+  margin: 0 auto 90px;
 }
 
-.kaufman__table_cell_theme_dark {
+.table_cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+}
+
+.table_heading_theme_dark {
+  color: white;
+}
+
+.table_text_theme_dark {
+  color: white;
+}
+
+.kaufman__triangle {
+  width: 660px;
+  height: 636px;
+  position: absolute;
+  right: -124px;
 }
 
 /* ===== Kaufman End ===== */
