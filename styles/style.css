@@ -9,7 +9,9 @@
   font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
   padding: 0;
 }
-
+*{
+  border: solid 1px red;
+}
 /* ===== Header Start ===== */
 
 .header {
@@ -37,6 +39,7 @@
 }
 
 .header__title {
+  margin: 0;
   align-self: center;
   line-height: 96px;
   max-width: 730px;
@@ -120,12 +123,11 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
-.two-columns__main-text__paragraph:nth-of-type(even) {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.two-columns__main-text__paragraph:last-child {
+  margin: 0;
 }
 
 .two-columns__main-text__paragraph_span-access {
@@ -198,12 +200,8 @@
   font-size: 18px;
   font-weight: normal;
   list-style: none;
-  margin: 0;
+  margin: 20px 0 0;
   padding: 0;
-}
-
-.table_text li {
-  margin-top: 20px;
 }
 
 /* ===== Digits End ===== */
@@ -211,7 +209,6 @@
 /* ===== Feyman start ===== */
 
 .feynman {
-  height: 790px;
   min-height: 790px;
   display: flex;
   flex-direction: column;
