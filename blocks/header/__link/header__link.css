@@ -1,0 +1,6 @@
+.header__link {
+    color: #2F80ED;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity ease 1s;
+   }
