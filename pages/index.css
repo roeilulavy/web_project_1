@@ -41,6 +41,9 @@
 /*-- Oakley --*/
 @import url('../blocks/content/oakley/oakley.css');
 @import url('../blocks/content/oakley/__two-columns/oakley__two-columns.css');
+@import url('../blocks/content/oakley/__two-columns/__brief/two-columns__brief.css');
+@import url('../blocks/content/oakley/__two-columns/__main-text/two-columns__main-text.css');
+@import url('../blocks/content/oakley/__two-columns/__paragraph/two-columns__paragraph.css');
 
 /*-- Feyman --*/
 @import url('../blocks/content/feynman/feynman.css');
