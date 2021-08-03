@@ -3,4 +3,8 @@
     text-decoration: none;
     opacity: 1;
     transition: opacity ease 1s;
-   }
+}
+
+.header__link:hover {
+    opacity: .5;
+}
