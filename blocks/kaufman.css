@@ -1,8 +1,9 @@
 .kaufman {
+    padding: 90px 0;
     display: flex;
+    background:  #1F1F1F;
     position: relative;
     overflow: hidden;
     flex-direction: column;
-    background:  #1F1F1F;
     align-items: center;
   }
